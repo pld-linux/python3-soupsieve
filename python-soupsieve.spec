@@ -2,7 +2,7 @@
 #
 # Conditional build:
 %bcond_with	doc	# API documentation
-%bcond_with	tests	# unit tests (fail... too old bs4?)
+%bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
@@ -23,7 +23,7 @@ BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-setuptools
 %if %{with tests}
 BuildRequires:	python-backports.functools_lru_cache
-BuildRequires:	python-bs4
+BuildRequires:	python-bs4 >= 4.9
 BuildRequires:	python-html5lib
 BuildRequires:	python-lxml
 BuildRequires:	python-pytest
@@ -33,7 +33,7 @@ BuildRequires:	python-pytest
 BuildRequires:	python3-modules >= 1:3.5
 BuildRequires:	python3-setuptools
 %if %{with tests}
-BuildRequires:	python3-bs4
+BuildRequires:	python3-bs4 >= 4.9
 BuildRequires:	python3-html5lib
 BuildRequires:	python3-lxml
 BuildRequires:	python3-pytest
