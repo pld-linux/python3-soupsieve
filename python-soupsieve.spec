@@ -11,7 +11,7 @@ Summary(pl.UTF-8):	Współczesna implementacja wybierania CSS dla Beautiful Soup
 Name:		python-soupsieve
 # keep 1.x here for python2 support
 Version:	1.9.6
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/soupsieve/
